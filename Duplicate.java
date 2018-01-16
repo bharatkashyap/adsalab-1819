@@ -22,9 +22,8 @@ class Duplicate {
 
 		for(int i=1; i<n; i++)
 		{
-			if(arr[i] == arr[i-1])
+			if(arr[i] == arr[i-1] && !(arr[i] != c))
 			{
-				flag = true;
 				c = arr[i], c_pos = i;
 				arr[i] = (i+1 == n) ? arr[i] : arr[i+1];	
 				new_len--;
