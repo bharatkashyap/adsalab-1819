@@ -1,0 +1,2 @@
+1. Remove duplicate elements from an array, assuming array to be sorted.
+2. Implement Binary Search on an array. Modify it to insert the element if not found in the array at the correct position.
