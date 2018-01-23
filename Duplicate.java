@@ -4,7 +4,8 @@ import java.util.*;
 class Duplicate {
 	public static void main(String[] args)
 	{
-		int n, new_len, c, c_pos;
+		int n, new_len, current, current_pos;
+		boolean seen;
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter number of elements in the array : ");
 		n = sc.nextInt();
@@ -19,15 +20,28 @@ class Duplicate {
 		}
 
 		new_len = n;
-
+		current = arr[0];
+		current_pos = 0;
+		seen = false;
+		
 		for(int i=1; i<n; i++)
 		{
-			if(arr[i] == arr[i-1] && !(arr[i] != c))
+			if(arr[i] == current)
 			{
-				c = arr[i], c_pos = i;
-				arr[i] = (i+1 == n) ? arr[i] : arr[i+1];	
+				current = arr[i];
+				current_pos = i;
+				seen = true;
 				new_len--;
-			}	
+
+			}
+
+			else if(arr[i] != current && (seen))
+			{
+				arr[current_pos] = arr[i];
+				current_pos += 1;
+				current = arr[i];
+			}
+
 		}
 
 		n = new_len;
