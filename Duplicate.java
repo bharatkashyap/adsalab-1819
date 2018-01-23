@@ -7,7 +7,7 @@ class Duplicate {
 		int n, new_len, current, current_pos;
 		boolean seen;
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter number of elements in the array : ");
+		System.out.print("Enter the number of elements in the array : ");
 		n = sc.nextInt();
 
 		int arr[] = new int[n];
