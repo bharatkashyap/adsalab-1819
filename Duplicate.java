@@ -19,27 +19,29 @@ class Duplicate {
 			arr[i] = sc.nextInt();
 		}
 
-		new_len = n;
 		current = arr[0];
 		current_pos = 0;
 		seen = false;
+		new_len = 1;
 		
 		for(int i=1; i<n; i++)
 		{
-			if(arr[i] == current)
+			if(arr[i] == current && (!seen))
 			{
 				current = arr[i];
 				current_pos = i;
 				seen = true;
-				new_len--;
-
 			}
+
+			else if(arr[i] == current && (seen))
+				continue;
 
 			else if(arr[i] != current && (seen))
 			{
 				arr[current_pos] = arr[i];
 				current_pos += 1;
 				current = arr[i];
+				new_len++;
 			}
 
 		}
