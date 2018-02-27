@@ -4,20 +4,28 @@ public class linkedListMain {
 	{
 		linkedList l = new linkedList();
 		l.display();
-		l.append(5);
+		l.append(1);
 		l.display();
-		l.push(1);
+		l.append(2);
 		l.display();
-		l.insertAtIndex(2,1);
+		l.append(3);
 		l.display();
-		l.insertAtIndex(9,0);
-		l.insertAtIndex(7,5);
-		l.insertAtIndex(4,3);
+		l.append(4);
 		l.display();
-		l.insertAtIndex(3,4);
+		l.insertAtIndex(5,1);
 		l.display();
-		l.insertAtIndex(7,0);
-		l.insertAtIndex(7,1);
+		l.insertAtIndex(5,5);
+		l.insertAtIndex(5,0);
+		l.swapFirstAndLast();
 		l.display();
+		l.delete(4);
+		l.delete(1);
+		l.display();
+		l.swapFirstAndLast();
+		l.display();
+		l.delete(5);
+		l.swapFirstAndLast();
+		l.display();
+
 	}
 }
