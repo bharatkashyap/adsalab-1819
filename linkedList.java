@@ -9,6 +9,17 @@ public class linkedList{
 		length = 0;
 	}
 	
+	public linkedList(linkedList l)
+	{
+		
+		linkedListNode iterator = l.head;
+		while(iterator != null)
+		{
+			this.append(iterator.data);
+			iterator = iterator.next;
+		}
+		
+	}
 	public void append(int d)
 	{
 		linkedListNode newNode = new linkedListNode(d);
@@ -146,13 +157,12 @@ public class linkedList{
 		{
 			linkedListNode temp = head;
 			head = head.next;
-			second.next = temp;
+			head.next = temp;
 			temp.next = null;
 		}
 
 		else
 		{
-		
 			while(iterator != null)
 			{
 				if(iterator.next != null)
@@ -184,6 +194,30 @@ public class linkedList{
 			}
 		}
 	
+	}
+	
+	
+	public void recursiveReverse(linkedListNode start)
+	{	
+		linkedListNode first, rest;
+		
+		if(start == null)
+			return; // List is empty 
+		
+		if(start.next == null)
+			return; // List contains only one element
+		
+		else
+		{
+			first = start;
+			rest = start.next;
+			head = rest;
+		}
+	
+		recursiveReverse(rest); // Reverse rest of the linked list
+		first.next.next = first; // Reverse first pointer link
+		first.next = null; //Point original first element to null
+		
 	}
 
 }

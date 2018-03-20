@@ -26,6 +26,11 @@ public class linkedListMain {
 		l.delete(5);
 		l.swapFirstAndLast();
 		l.display();
-
+		l.append(1);
+		l.append(2);
+		l.append(8);
+		l.display();
+		l.recursiveReverse(l.head);
+		l.display();
 	}
 }
