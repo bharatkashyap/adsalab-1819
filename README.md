@@ -19,4 +19,5 @@ Index :
   * *LinkedListMain.java* : Added deletion operation on a singly linked list
 * [__20/03__]    
   * *dLinkedList.java* : Added sorted insertion on a doubly linked list
+  * *LinkedList.java* : Added recursive reversal on linked list
 
