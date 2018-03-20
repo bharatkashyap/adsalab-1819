@@ -17,4 +17,6 @@ Index :
    * *LinkedListMain.java* : Added swapping of first and last elements
 * [__25/02__]    
   * *LinkedListMain.java* : Added deletion operation on a singly linked list
+* [__20/03__]    
+  * *dLinkedList.java* : Added sorted insertion on a doubly linked list
 

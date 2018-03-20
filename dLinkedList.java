@@ -42,7 +42,7 @@ public class dLinkedList {
 		{
 			head = null;
 			length--;
-			System.out.print("Linked list deleted.");
+			System.out.print("Linked list deleted.\n");
 		}
 		else
 		{
@@ -86,6 +86,38 @@ public class dLinkedList {
 			iterator = iterator.next;
 		}	
 		
+	}
+	
+	public void sortedInsert(int d)
+	{
+		dLinkedListNode newNode = new dLinkedListNode(d);
+		dLinkedListNode iterator = head;
+		
+		if(iterator == null)
+			head = newNode;
+		
+		else
+		{
+			if(newNode.data < head.data)
+			{
+				newNode.next = head;
+				head.prev = newNode;
+				head = newNode;
+			}
+			
+			else
+			{
+				while(iterator.next != null && iterator.next.data < newNode.data)
+				{
+					iterator = iterator.next;
+				}
+				
+				newNode.prev = iterator;
+				newNode.next = iterator.next;
+				iterator.next = newNode;
+			}
+		}
+			
 	}
 
 	
