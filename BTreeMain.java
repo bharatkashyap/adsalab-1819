@@ -15,5 +15,21 @@ public class BTreeMain {
 		T.postOrderPrint(T.root);
 		System.out.print("\nIn Order Traversal : \n");
 		T.inOrderPrint(T.root);
+		
+		T.search(5);
+		T.search(3);
+		
+		T.insert(3);
+		System.out.print("\nIn Order Traversal : \n");
+		T.inOrderPrint(T.root);
+		T.search(3);
+		
+		System.out.println(T.computeHT(T.root));
+		
+		System.out.println(T.findMin(T.root).data);
+		
+		T.insert(2);
+		System.out.println(T.findMin(T.root).data);
+		
 	}
 }
