@@ -1,7 +1,6 @@
 
 public class BTree 
 {
-	
 	BTreeNode root;
 	
 	public BTree()
@@ -50,16 +49,21 @@ public class BTree
 		
 	}
 	
-	public BTreeNode BSTInsert (int d, BTreeNode t)
+	public void insert(int d)
 	{
+		root = BSTInsert(d, root);
+	}
+	
+	public BTreeNode BSTInsert (int d, BTreeNode t)
+	{		
 		if(t == null)
 			t = new BTreeNode(d);
-		
-		if(d > t.data)
-			t.left = BSTInsert(d, t.right);
+			
+		else if(d > t.data)
+			t.right = BSTInsert(d, t.right);
 		
 		else if(d < t.data)
-			t.right = BSTInsert(d, t.left);
+			t.left = BSTInsert(d, t.left);
 			
 		return t;
 	}

@@ -20,4 +20,5 @@ Index :
 * [__20/03__]    
   * *dLinkedList.java* : Added sorted insertion on a doubly linked list
   * *LinkedList.java* : Added recursive reversal on linked list
-
+* [__17/04__]    
+  * *BTree.java* : Finally managed to implement Binary Tree insertion
