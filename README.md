@@ -22,3 +22,5 @@ Index :
   * *LinkedList.java* : Added recursive reversal on linked list
 * [__17/04__]    
   * *BTree.java* : Finally managed to implement Binary Tree insertion and deletion
+* [__24/04__]    
+  * *Solution.java* : Solution to LE 1 program - Find sum of shallowest leaves.
