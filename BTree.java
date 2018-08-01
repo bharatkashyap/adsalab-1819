@@ -7,7 +7,11 @@ public class BTree
 	{
 		root = null;
 	}
-
+	public void prettyPreOrderPrint()
+	{
+		System.out.println("\nPre-order traversal :");
+		preOrderPrint(root);
+	}
 
 
 	public void preOrderPrint(BTreeNode t)
@@ -23,6 +27,12 @@ public class BTree
 			preOrderPrint(t.right);
 		}
 	}
+	
+	public void prettyPostOrderPrint()
+	{
+		System.out.println("\nPost-order traversal :");
+		postOrderPrint(root);
+	}
 
 	public void postOrderPrint(BTreeNode t)
 	{
@@ -36,7 +46,7 @@ public class BTree
 		}
 	}
 
-	public void print()
+	public void prettyInOrderPrint()
 	{
 		System.out.println("\nIn-order traversal :");
 		inOrderPrint(root);
