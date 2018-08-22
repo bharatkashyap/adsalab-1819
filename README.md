@@ -24,7 +24,7 @@ Index :
   * *BTree.java* : Finally managed to implement Binary Tree insertion and deletion
 * [__24/04__]    
   * *Solution.java* : Solution to LE 1 program - Find sum of shallowest leaves.
-* [__08/07/18__]
+* [__08/08/18__]
   * *BTreeMain.java* : Menu driven program to perform all operations on BST. Entered ADSA (Odd: 18-19)
-* [__22/07/18__]
+* [__22/08/18__]
   * *HeapSort.java* : Heap sort implementation
