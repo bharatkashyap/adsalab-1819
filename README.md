@@ -30,5 +30,5 @@ Index :
   * *HeapSort.java* : Heap sort implementation
 * [__29/08/18__]
   * *AVLTree.java* : AVL Tree insertion and deletion
-* [__05/09/18]
+* [__05/09/18__]
   * *RedBlackTree.java* : Red Black Tree insertion and deletion
