@@ -31,4 +31,6 @@ Index :
 * [__29/08/18__]
   * *AVLTree.java* : AVL Tree insertion and deletion
 * [__05/09/18__]
-  * *RedBlackTree.java* : Red Black Tree insertion and deletion
+  * *RedBlackTree.java* : Red Black Tree insertion and deletion (almost)
+* [__01/11/18__]
+  * *splayTree.java* : Splay Tree implementation 
